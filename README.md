@@ -1,9 +1,10 @@
 # Badgerly
 
 - Integrates easily with [Font Awesome](http://fontawesome.io/)!
-- Fully implemented in css 3, no spacer images or other hackery.
+- Fully implemented in Css 3, no spacer images or other hackery.
 - Simple to use CSS classes which can be extended.
 - Implemented in SCSS, also available in plain CSS for your convenience.
+- Also, check out our [Wall of Badges](https://jsfiddle.net/stevenmhunt/3krm64o1/)!
 
 [![badges.png](https://s11.postimg.org/nfqgfq09f/badges.png)](https://postimg.org/image/aoca97qhb/)
 
@@ -43,3 +44,7 @@ Supports either a single ribbon or a lanyard with two visible ribbons.
     </div>
   </div>
 ```
+
+## Contributing
+
+Contributions and pull requests are welcome! However, please make sure that you only modify the SCSS file and then transpile it into CSS. I use WebStorm which will automatically set up a watcher for it, I've even left the configuration for that in the project so that it "just works".
