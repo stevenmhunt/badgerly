@@ -1,0 +1,414 @@
+/*****************************
+ * Badgerly
+ * Written by Steven Hunt
+ * MIT License
+ *****************************/
+/* represents a badge, which has a ribbon and a shape. */
+.badge {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  /* SHAPES */
+  /* common shape properties */
+  /* a diamond is a square rotated. */
+  /* rotate the contents of the diamond back so that it doesn't look weird. */
+  /* COLORS */
+  /* a badge can either have a simple ribbon, or a lanyard with a left and right ribbon. */
+  /* RIBBON PATTERNS */
+  /* COUNTRIES */
+  /* 13 red and white strips: United States */
+  /* red white and blue: Netherlands */
+  /* red white and green: Mexico, Hungary */
+  /* blue white and red: France */
+  /* red white and red: Canada */
+  /* green white and red: Italy */
+  /* red blue and white: Russia */
+  /* gold red and black: Germany */
+  /* SOLID COLORS */
+  /* Solid Red */
+  /* Solid Orange */
+  /* Solid Yellow */
+  /* Solid Green */
+  /* Solid Blue */
+  /* Solid Purple */
+  /* Solid Pink */
+  /* Solid Black */
+  /* RAINBOW */ }
+  .badge .circle, .badge .square, .badge .diamond {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    z-index: 1000; }
+  .badge .diamond {
+    transform: rotate(45deg); }
+  .badge .diamond > * {
+    transform: rotate(-45deg); }
+  .badge .gold {
+    background: radial-gradient(gold, palegoldenrod);
+    color: goldenrod; }
+  .badge .silver {
+    background: radial-gradient(#fafafa, #dddddd);
+    color: #cccccc; }
+  .badge .bronze {
+    background: radial-gradient(darkorange, chocolate);
+    color: sienna; }
+  .badge .lanyard {
+    position: relative;
+    overflow: hidden;
+    /* common properties of the left and right ribbon in a lanyard. */ }
+    .badge .lanyard .ribbon.left, .badge .lanyard .ribbon.right {
+      top: 0;
+      position: absolute;
+      z-index: 0; }
+  .badge .ribbon {
+    margin: 0;
+    padding: 0; }
+  .badge .ribbon.red-white-stripes, .badge .ribbon.usa {
+    background: linear-gradient(to right, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red); }
+  .badge .ribbon.red-white-blue, .badge .ribbon.netherlands {
+    background: linear-gradient(to right, red, red, red, red, red, red, red, red, white, white, white, white, white, white, blue, blue, blue, blue, blue, blue, blue, blue); }
+  .badge .ribbon.red-white-green, .badge .ribbon.mexico, .badge .ribbon.hungary {
+    background: linear-gradient(to right, red, red, red, red, red, red, red, red, white, white, white, white, white, white, green, green, green, green, green, green, green, green); }
+  .badge .ribbon.blue-white-red, .badge .ribbon.france {
+    background: linear-gradient(to right, blue, blue, blue, blue, blue, blue, blue, blue, white, white, white, white, white, white, red, red, red, red, red, red, red, red); }
+  .badge .ribbon.red-white-red, .badge .ribbon.canada {
+    background: linear-gradient(to right, red, red, red, red, red, red, red, red, white, white, white, white, white, white, white, white, white, red, red, red, red, red, red, red, red); }
+  .badge .ribbon.green-white-red, .badge .ribbon.italy {
+    background: linear-gradient(to right, green, green, green, green, green, green, green, green, white, white, white, white, white, white, red, red, red, red, red, red, red, red); }
+  .badge .ribbon.red-blue-white, .badge .ribbon.russia {
+    background: linear-gradient(to right, red, red, red, red, red, red, red, red, blue, blue, blue, blue, blue, blue, white, white, white, white, white, white, white, white); }
+  .badge .ribbon.gold-red-black, .badge .ribbon.germany {
+    background: linear-gradient(to right, gold, gold, gold, gold, gold, gold, gold, gold, red, red, red, red, red, red, black, black, black, black, black, black, black, black); }
+  .badge .ribbon.red {
+    background: linear-gradient(to right, red, darkred, red, darkred, red); }
+  .badge .ribbon.orange {
+    background: linear-gradient(to right, orange, darkorange, orange, darkorange, orange); }
+  .badge .ribbon.yellow {
+    background: linear-gradient(to right, yellow, gold, yellow, gold, yellow); }
+  .badge .ribbon.green {
+    background: linear-gradient(to right, green, darkgreen, green, darkgreen, green); }
+  .badge .ribbon.blue {
+    background: linear-gradient(to right, blue, darkblue, blue, darkblue, blue); }
+  .badge .ribbon.purple {
+    background: linear-gradient(to right, rebeccapurple, purple, rebeccapurple, purple, rebeccapurple); }
+  .badge .ribbon.pink {
+    background: linear-gradient(to right, pink, lightpink, pink, lightpink, pink); }
+  .badge .ribbon.black {
+    background: linear-gradient(to right, black, #333333, black, #333333, black); }
+  .badge .ribbon.rainbow {
+    background: linear-gradient(to right, red, red, orange, orange, yellow, yellow, green, green, blue, blue, purple, purple); }
+
+/* BADGE SIZES */
+/* Tiny - really really small. No difference between border and no border since its too small to tell. */
+.badge.tiny .circle, .badge.tiny .circle.border {
+  border-radius: 5px;
+  font-size: 6px;
+  text-align: center;
+  width: 10px;
+  height: 8px;
+  padding-top: 1px; }
+.badge.tiny .square, .badge.tiny .square.border, .badge.tiny .diamond, .badge.tiny .diamond.border {
+  font-size: 6px;
+  text-align: center;
+  width: 10px;
+  height: 8px;
+  padding-top: 1px; }
+.badge.tiny .lanyard {
+  height: 6px;
+  padding-left: 2px;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-bottom: -1px;
+  width: 12px; }
+  .badge.tiny .lanyard .ribbon.left {
+    transform: translate(-3px, 0) rotate(-20deg); }
+  .badge.tiny .lanyard .ribbon.right {
+    transform: scaleX(-1) translate(-3px, 0) rotate(-20deg); }
+.badge.tiny .ribbon {
+  margin-bottom: -1px;
+  margin-left: 3px;
+  width: 4px;
+  height: 5px; }
+
+/* Small */
+.badge.small {
+  width: 30px;
+  height: 37px; }
+  .badge.small .circle {
+    border-radius: 12px;
+    font-size: 15px;
+    text-align: center;
+    width: 25px;
+    height: 20px;
+    padding-top: 4px; }
+  .badge.small .circle.border {
+    border-radius: 12px;
+    font-size: 15px;
+    text-align: center;
+    width: 22px;
+    height: 19px;
+    padding-top: 3px; }
+  .badge.small .square {
+    font-size: 15px;
+    text-align: center;
+    width: 25px;
+    height: 21px;
+    padding-top: 3px; }
+  .badge.small .square.border {
+    font-size: 15px;
+    text-align: center;
+    width: 22px;
+    height: 20px;
+    padding-top: 2px; }
+  .badge.small .diamond {
+    font-size: 15px;
+    text-align: center;
+    width: 17px;
+    height: 16px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    transform: translate(3px, 0) rotate(45deg); }
+  .badge.small .diamond.border {
+    font-size: 15px;
+    text-align: center;
+    width: 16px;
+    height: 15px;
+    padding-top: 0;
+    padding-bottom: 1px; }
+  .badge.small .border.gold {
+    border: 1px solid goldenrod; }
+  .badge.small .border.silver {
+    border: 1px solid #cccccc; }
+  .badge.small .border.bronze {
+    border: 1px solid sienna; }
+  .badge.small .lanyard {
+    height: 15px;
+    padding-left: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -2px;
+    width: 30px; }
+    .badge.small .lanyard .ribbon {
+      top: 2px; }
+    .badge.small .lanyard .ribbon.left {
+      transform: translate(-6px, 0) rotate(-15deg); }
+    .badge.small .lanyard .ribbon.right {
+      transform: scaleX(-1) translate(-6px, 0) rotate(-15deg); }
+  .badge.small .ribbon {
+    margin-bottom: -2px;
+    margin-left: 7px;
+    width: 10px;
+    height: 12px; }
+
+/* Medium */
+.badge.medium {
+  width: 60px;
+  height: 75px; }
+  .badge.medium .circle {
+    border-radius: 25px;
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+    height: 42px;
+    padding-top: 7px; }
+  .badge.medium .circle.border {
+    border-radius: 25px;
+    font-size: 30px;
+    text-align: center;
+    width: 45px;
+    height: 40px;
+    padding-top: 5px; }
+  .badge.medium .square {
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+    height: 42px;
+    padding-top: 7px; }
+  .badge.medium .square.border {
+    font-size: 30px;
+    text-align: center;
+    width: 45px;
+    height: 40px;
+    padding-top: 5px; }
+  .badge.medium .diamond {
+    font-size: 30px;
+    text-align: center;
+    width: 34px;
+    height: 32px;
+    padding-top: 0;
+    padding-bottom: 2px;
+    transform: translate(7px, 0) rotate(45deg); }
+  .badge.medium .diamond.border {
+    font-size: 30px;
+    text-align: center;
+    width: 32px;
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 2px; }
+  .badge.medium .border.gold {
+    border: 2px solid goldenrod; }
+  .badge.medium .border.silver {
+    border: 2px solid #cccccc; }
+  .badge.medium .border.bronze {
+    border: 2px solid sienna; }
+  .badge.medium .lanyard {
+    height: 30px;
+    padding-left: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -5px;
+    width: 60px; }
+    .badge.medium .lanyard .ribbon {
+      top: 5px; }
+    .badge.medium .lanyard .ribbon.left {
+      transform: translate(-13px, 0) rotate(-15deg); }
+    .badge.medium .lanyard .ribbon.right {
+      transform: scaleX(-1) translate(-13px, 0) rotate(-15deg); }
+  .badge.medium .ribbon {
+    margin-bottom: -5px;
+    margin-left: 15px;
+    width: 20px;
+    height: 25px; }
+
+/* Large */
+.badge.large {
+  width: 120px;
+  height: 150px; }
+  .badge.large .circle {
+    border-radius: 50px;
+    font-size: 60px;
+    text-align: center;
+    width: 100px;
+    height: 85px;
+    padding-top: 15px; }
+  .badge.large .circle.border {
+    border-radius: 50px;
+    font-size: 60px;
+    text-align: center;
+    width: 90px;
+    height: 80px;
+    padding-top: 10px; }
+  .badge.large .square {
+    font-size: 60px;
+    text-align: center;
+    width: 100px;
+    height: 85px;
+    padding-top: 15px; }
+  .badge.large .square.border {
+    font-size: 60px;
+    text-align: center;
+    width: 90px;
+    height: 80px;
+    padding-top: 10px; }
+  .badge.large .diamond {
+    font-size: 60px;
+    text-align: center;
+    width: 69px;
+    height: 65px;
+    padding-top: 0;
+    padding-bottom: 4px;
+    transform: translate(14px, 0) rotate(45deg); }
+  .badge.large .diamond.border {
+    font-size: 60px;
+    text-align: center;
+    width: 64px;
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 4px; }
+  .badge.large .border.gold {
+    border: 5px solid goldenrod; }
+  .badge.large .border.silver {
+    border: 5px solid #cccccc; }
+  .badge.large .border.bronze {
+    border: 5px solid sienna; }
+  .badge.large .lanyard {
+    height: 60px;
+    padding-left: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -16px;
+    width: 120px; }
+    .badge.large .lanyard .ribbon {
+      top: 5px; }
+    .badge.large .lanyard .ribbon.left {
+      transform: translate(-25px, 0) rotate(-15deg); }
+    .badge.large .lanyard .ribbon.right {
+      transform: scaleX(-1) translate(-25px, 0) rotate(-15deg); }
+  .badge.large .ribbon {
+    margin-bottom: -10px;
+    margin-left: 30px;
+    width: 40px;
+    height: 50px; }
+
+/* Huge - possibly with a Y. */
+.badge.huge {
+  width: 240px;
+  height: 300px; }
+  .badge.huge .circle {
+    border-radius: 100px;
+    font-size: 120px;
+    text-align: center;
+    width: 200px;
+    height: 170px;
+    padding-top: 30px; }
+  .badge.huge .circle.border {
+    border-radius: 100px;
+    font-size: 120px;
+    text-align: center;
+    width: 180px;
+    height: 160px;
+    padding-top: 20px; }
+  .badge.huge .square {
+    font-size: 120px;
+    text-align: center;
+    width: 200px;
+    height: 170px;
+    padding-top: 30px; }
+  .badge.huge .square.border {
+    font-size: 120px;
+    text-align: center;
+    width: 180px;
+    height: 160px;
+    padding-top: 20px; }
+  .badge.huge .diamond {
+    font-size: 120px;
+    text-align: center;
+    width: 138px;
+    height: 130px;
+    padding-top: 0;
+    padding-bottom: 8px;
+    transform: translate(28px, 0) rotate(45deg); }
+  .badge.huge .diamond.border {
+    font-size: 120px;
+    text-align: center;
+    width: 128px;
+    height: 120px;
+    padding-top: 0;
+    padding-bottom: 8px; }
+  .badge.huge .border.gold {
+    border: 10px solid goldenrod; }
+  .badge.huge .border.silver {
+    border: 10px solid #cccccc; }
+  .badge.huge .border.bronze {
+    border: 10px solid sienna; }
+  .badge.huge .lanyard {
+    height: 120px;
+    padding-left: 40px;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: -32px;
+    width: 240px; }
+    .badge.huge .lanyard .ribbon {
+      top: 10px; }
+    .badge.huge .lanyard .ribbon.left {
+      transform: translate(-50px, 0) rotate(-15deg); }
+    .badge.huge .lanyard .ribbon.right {
+      transform: scaleX(-1) translate(-50px, 0) rotate(-15deg); }
+  .badge.huge .ribbon {
+    margin-bottom: -20px;
+    margin-left: 60px;
+    width: 80px;
+    height: 100px; }
+
+/*# sourceMappingURL=badgerly.css.map */
