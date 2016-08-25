@@ -1,0 +1,26 @@
+{
+  "name": "badgerly",
+  "homepage": "https://github.com/stevenmhunt/badgerly",
+  "authors": [
+    "Steven Hunt <steven.mtw.hunt@gmail.com>"
+  ],
+  "description": "A CSS 3 library for rendering badges.",
+  "main": "badgerly.css",
+  "keywords": [
+    "css",
+    "badge",
+    "medal",
+    "ribbon",
+    "achievement",
+    "gamification",
+    "award"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

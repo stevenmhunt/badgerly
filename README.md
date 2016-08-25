@@ -1,5 +1,9 @@
 # Badgerly
 
+```
+    $> bower install badgerly --save
+```
+
 - Integrates easily with [Font Awesome](http://fontawesome.io/)!
 - Fully implemented in CSS 3, no spacer images or other hackery.
 - Simple to use CSS classes which can be extended.
