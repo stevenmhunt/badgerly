@@ -12,6 +12,9 @@
 
 [![badges.png](https://s11.postimg.org/nfqgfq09f/badges.png)](https://postimg.org/image/aoca97qhb/)
 
+## Integrations
+- [angular-badgerly](https://github.com/stevenmhunt/angular-badgerly) - Adds directive support for Badgerly, making it even easier (somehow) to create badges!
+
 ## Colors
 Gold, Silver, Bronze
 
