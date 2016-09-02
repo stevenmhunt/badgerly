@@ -1,0 +1,33 @@
+{
+  "name": "badgerly",
+  "version": "0.2.0",
+  "description": "A CSS 3 library for rendering badges.",
+  "main": "badgerly.css",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenmhunt/badgerly.git"
+  },
+  "keywords": [
+    "css",
+    "badge",
+    "medal",
+    "ribbon",
+    "achievement",
+    "gamification",
+    "award"
+  ],
+  "author": "Steven Hunt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevenmhunt/badgerly/issues"
+  },
+  "homepage": "https://github.com/stevenmhunt/badgerly#readme"
+}

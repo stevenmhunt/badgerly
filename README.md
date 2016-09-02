@@ -54,4 +54,8 @@ Supports either a single ribbon or a lanyard with two visible ribbons.
 
 ## Contributing
 
-Contributions and pull requests are welcome! However, please make sure that you only modify the SCSS file and then transpile it into CSS. I use WebStorm which will automatically set up a watcher for it, I've even left the configuration for that in the project so that it "just works".
+Contributions and pull requests are welcome! Here are instructions on how to build the project:
+
+- Make changes in the **badgerly.scss** file.
+- Then, run `npm install` followed by `gulp sass` to transpile the SCSS file into CSS.
+- Push the your changes to your fork and submit a PR.
