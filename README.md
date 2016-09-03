@@ -12,8 +12,8 @@
 - Fully implemented in CSS 3, no spacer images or other hackery.
 - Simple to use CSS classes which can be extended.
 - Implemented in SCSS, also available in plain CSS for your convenience.
-- Also, check out our [Wall of Badges](https://jsfiddle.net/stevenmhunt/3krm64o1/)!
----
+
+## Check out the [Wall of Badges](https://jsfiddle.net/stevenmhunt/3krm64o1/)
 <img alt="WALL OF BADGES" src="https://s11.postimg.org/nfqgfq09f/badges.png">
 
 ## Integrations
