@@ -5,9 +5,7 @@
     > bower install badgerly --save
 ```
 
-<p>
 <img align="left" height="150" style="margin-right: 30px;" alt="BADGERLY BADGER BADGE" src="https://s17.postimg.org/mshuxs24v/badgerly.png">
-</p>
 
 ---
 - Integrates easily with [Font Awesome](http://fontawesome.io/)!
@@ -65,3 +63,6 @@ Contributions and pull requests are welcome! Here are instructions on how to bui
 - Make changes in the **badgerly.scss** file.
 - Then, run `npm install` followed by `gulp sass` to transpile the SCSS file into CSS.
 - Push the your changes to your fork and submit a PR.
+
+## Credits
+- <div>Badger icon made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
