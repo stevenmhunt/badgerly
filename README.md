@@ -1,16 +1,22 @@
+
 # Badgerly
 
 ```
-    $> bower install badgerly --save
+    > bower install badgerly --save
 ```
 
+<p>
+<img align="left" height="150" style="margin-right: 30px;" alt="BADGERLY BADGER BADGE" src="https://s17.postimg.org/mshuxs24v/badgerly.png">
+</p>
+
+---
 - Integrates easily with [Font Awesome](http://fontawesome.io/)!
 - Fully implemented in CSS 3, no spacer images or other hackery.
 - Simple to use CSS classes which can be extended.
 - Implemented in SCSS, also available in plain CSS for your convenience.
 - Also, check out our [Wall of Badges](https://jsfiddle.net/stevenmhunt/3krm64o1/)!
-
-[![badges.png](https://s11.postimg.org/nfqgfq09f/badges.png)](https://postimg.org/image/aoca97qhb/)
+---
+<img alt="WALL OF BADGES" src="https://s11.postimg.org/nfqgfq09f/badges.png">
 
 ## Integrations
 - [angular-badgerly](https://github.com/stevenmhunt/angular-badgerly) - Adds directive support for Badgerly, making it even easier (somehow) to create badges!
