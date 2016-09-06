@@ -25,6 +25,7 @@
   /* green white and red: Italy */
   /* red blue and white: Russia */
   /* gold red and black: Germany */
+  /* orange white and green: India */
   /* SOLID COLORS */
   /* Solid Red */
   /* Solid Orange */
@@ -80,6 +81,8 @@
     background: linear-gradient(to right, red, red, red, red, red, red, red, red, blue, blue, blue, blue, blue, blue, white, white, white, white, white, white, white, white); }
   .badge .ribbon.gold-red-black, .badge .ribbon.germany {
     background: linear-gradient(to right, gold, gold, gold, gold, gold, gold, gold, gold, red, red, red, red, red, red, black, black, black, black, black, black, black, black); }
+  .badge .ribbon.orange-white-green, .badge .ribbon.india {
+    background: linear-gradient(to right, orange, orange, orange, orange, orange, orange, orange, orange, white, white, white, white, white, white, green, green, green, green, green, green, green, green); }
   .badge .ribbon.red {
     background: linear-gradient(to right, red, darkred, red, darkred, red); }
   .badge .ribbon.orange {
@@ -108,12 +111,14 @@
   width: 10px;
   height: 8px;
   padding-top: 1px; }
+
 .badge.tiny .square, .badge.tiny .square.border, .badge.tiny .diamond, .badge.tiny .diamond.border {
   font-size: 6px;
   text-align: center;
   width: 10px;
   height: 8px;
   padding-top: 1px; }
+
 .badge.tiny .lanyard {
   height: 6px;
   padding-left: 2px;
@@ -125,6 +130,7 @@
     transform: translate(-3px, 0) rotate(-20deg); }
   .badge.tiny .lanyard .ribbon.right {
     transform: scaleX(-1) translate(-3px, 0) rotate(-20deg); }
+
 .badge.tiny .ribbon {
   margin-bottom: -1px;
   margin-left: 3px;
@@ -410,5 +416,3 @@
     margin-left: 60px;
     width: 80px;
     height: 100px; }
-
-/*# sourceMappingURL=badgerly.css.map */
