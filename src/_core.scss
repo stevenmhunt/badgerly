@@ -1,0 +1,29 @@
+/*****************************
+ * Badgerly
+ * Core styles for all shapes and colors
+ * MIT License
+ *****************************/
+
+/* represents a badge, which has a ribbon and a shape. */
+.badge {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  .border {
+    border-style: solid;
+
+    &.gold {
+      border-color: goldenrod;
+    }
+
+    &.silver {
+      border-color: #cccccc;
+    }
+
+    &.bronze {
+      border-color: sienna;
+    }
+  }
+}
