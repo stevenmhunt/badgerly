@@ -1,0 +1,85 @@
+@import "../extensions";
+
+.badge.huge {
+  width: 240px;
+  height: 300px;
+
+  .circle {
+    @extend .ext_circle_huge;
+    width: 200px;
+    height: 170px;
+    padding-top: 30px;
+  }
+
+  .circle.border {
+    @extend .ext_circle_huge;
+    width: 180px;
+    height: 160px;
+    padding-top: 20px;
+  }
+
+  .square {
+    font-size: 120px;
+    text-align: center;
+    width: 200px;
+    height: 170px;
+    padding-top: 30px;
+  }
+
+  .square.border {
+    font-size: 120px;
+    text-align: center;
+    width: 180px;
+    height: 160px;
+    padding-top: 20px;
+  }
+
+  .diamond {
+    font-size: 120px;
+    text-align: center;
+    width: 138px;
+    height: 130px;
+    padding-top: 0;
+    padding-bottom: 8px;
+    transform: translate(28px, 0) rotate(45deg);
+  }
+
+  .diamond.border {
+    font-size: 120px;
+    text-align: center;
+    width: 128px;
+    height: 120px;
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+
+  .border {
+    border-width: 10px;
+  }
+
+  .lanyard {
+    height: 120px;
+    padding-left: 40px;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: -32px;
+    width: 240px;
+
+    .ribbon {
+      top: 10px;
+    }
+    .ribbon.left {
+      transform: translate(-50px, 0) rotate(-15deg);
+    }
+    .ribbon.right {
+      transform: scaleX(-1) translate(-50px, 0) rotate(-15deg);
+    }
+  }
+
+  .ribbon {
+    margin-bottom: -20px;
+    margin-left: 60px;
+    width: 80px;
+    height: 100px;
+  }
+}

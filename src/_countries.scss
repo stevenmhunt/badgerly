@@ -1,0 +1,47 @@
+.badge {
+
+  /* 13 red and white strips: United States */
+  .ribbon.red-white-stripes, .ribbon.usa {
+    background: linear-gradient(to right, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red)
+  }
+
+  /* red white and blue: Netherlands */
+  .ribbon.red-white-blue, .ribbon.netherlands {
+    background: linear-gradient(to right, red, red, red, red, red, red, red, red, white, white, white, white, white, white, blue, blue, blue, blue, blue, blue, blue, blue);
+  }
+
+  /* red white and green: Mexico, Hungary */
+  .ribbon.red-white-green, .ribbon.mexico, .ribbon.hungary {
+    background: linear-gradient(to right, red, red, red, red, red, red, red, red, white, white, white, white, white, white, green, green, green, green, green, green, green, green);
+  }
+
+  /* blue white and red: France */
+  .ribbon.blue-white-red, .ribbon.france {
+    background: linear-gradient(to right, blue, blue, blue, blue, blue, blue, blue, blue, white, white, white, white, white, white, red, red, red, red, red, red, red, red);
+  }
+
+  /* red white and red: Canada */
+  .ribbon.red-white-red, .ribbon.canada {
+    background: linear-gradient(to right, red, red, red, red, red, red, red, red, white, white, white, white, white, white, white, white, white, red, red, red, red, red, red, red, red);
+  }
+
+  /* green white and red: Italy */
+  .ribbon.green-white-red, .ribbon.italy {
+    background: linear-gradient(to right, green, green, green, green, green, green, green, green, white, white, white, white, white, white, red, red, red, red, red, red, red, red);
+  }
+
+  /* red blue and white: Russia */
+  .ribbon.red-blue-white, .ribbon.russia {
+    background: linear-gradient(to right, red, red, red, red, red, red, red, red, blue, blue, blue, blue, blue, blue, white, white, white, white, white, white, white, white);
+  }
+
+  /* gold red and black: Germany */
+  .ribbon.gold-red-black, .ribbon.germany {
+    background: linear-gradient(to right, gold, gold, gold, gold, gold, gold, gold, gold, red, red, red, red, red, red, black, black, black, black, black, black, black, black);
+  }
+
+  /* orange white and green: India */
+  .ribbon.orange-white-green, .ribbon.india {
+    background: linear-gradient(to right, orange, orange, orange, orange, orange, orange, orange, orange, white, white, white, white, white, white, green, green, green, green, green, green, green, green);
+  }
+}

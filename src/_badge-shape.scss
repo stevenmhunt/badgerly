@@ -1,0 +1,38 @@
+.badge {
+
+  /* common shape properties */
+  .circle, .square, .diamond {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  /* a diamond is a square rotated. */
+  .diamond {
+    transform: rotate(45deg);
+  }
+
+  /* rotate the contents of the diamond back so that it doesn't look weird. */
+  .diamond > * {
+    transform: rotate(-45deg);
+  }
+
+  /* a badge can either have a simple ribbon, or a lanyard with a left and right ribbon. */
+  .lanyard {
+    position: relative;
+    overflow: hidden;
+
+    /* common properties of the left and right ribbon in a lanyard. */
+    .ribbon.left, .ribbon.right {
+      top: 0;
+      position: absolute;
+      z-index: 0;
+    }
+  }
+
+  .ribbon {
+    margin: 0;
+    padding: 0;
+  }
+}

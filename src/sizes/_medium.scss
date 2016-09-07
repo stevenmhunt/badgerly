@@ -1,0 +1,85 @@
+@import "../extensions";
+
+.badge.medium {
+  width: 60px;
+  height: 75px;
+
+  .circle {
+    @extend .ext_circle_medium;
+    width: 50px;
+    height: 42px;
+    padding-top: 7px;
+  }
+
+  .circle.border {
+    @extend .ext_circle_medium;
+    width: 45px;
+    height: 40px;
+    padding-top: 5px;
+  }
+
+  .square {
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+    height: 42px;
+    padding-top: 7px;
+  }
+
+  .square.border {
+    font-size: 30px;
+    text-align: center;
+    width: 45px;
+    height: 40px;
+    padding-top: 5px;
+  }
+
+  .diamond {
+    font-size: 30px;
+    text-align: center;
+    width: 34px;
+    height: 32px;
+    padding-top: 0;
+    padding-bottom: 2px;
+    transform: translate(7px, 0) rotate(45deg);
+  }
+
+  .diamond.border {
+    font-size: 30px;
+    text-align: center;
+    width: 32px;
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 2px;
+  }
+
+  .border {
+    border-width: 2px;
+  }
+
+  .lanyard {
+    height: 30px;
+    padding-left: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -5px;
+    width: 60px;
+
+    .ribbon {
+      top: 5px;
+    }
+    .ribbon.left {
+      transform: translate(-13px, 0) rotate(-15deg);
+    }
+    .ribbon.right {
+      transform: scaleX(-1) translate(-13px, 0) rotate(-15deg);
+    }
+  }
+
+  .ribbon {
+    margin-bottom: -5px;
+    margin-left: 15px;
+    width: 20px;
+    height: 25px;
+  }
+}

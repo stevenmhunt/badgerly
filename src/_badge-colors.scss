@@ -1,0 +1,17 @@
+.badge {
+
+  .gold {
+    background: radial-gradient(gold, palegoldenrod);
+    color: goldenrod;
+  }
+
+  .silver {
+    background: radial-gradient(#fafafa, #dddddd);
+    color: #cccccc;
+  }
+
+  .bronze {
+    background: radial-gradient(darkorange, chocolate);
+    color: sienna;
+  }
+}

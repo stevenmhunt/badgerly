@@ -3,39 +3,32 @@
  * Written by Steven Hunt
  * MIT License
  *****************************/
+/*****************************
+ * Badgerly
+ * Core styles for all shapes and colors
+ * MIT License
+ *****************************/
 /* represents a badge, which has a ribbon and a shape. */
 .badge {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  position: relative;
-  /* SHAPES */
+  position: relative; }
+  .badge .border {
+    border-style: solid; }
+    .badge .border.gold {
+      border-color: goldenrod; }
+    .badge .border.silver {
+      border-color: #cccccc; }
+    .badge .border.bronze {
+      border-color: sienna; }
+
+/* SHAPES */
+.badge {
   /* common shape properties */
   /* a diamond is a square rotated. */
   /* rotate the contents of the diamond back so that it doesn't look weird. */
-  /* COLORS */
-  /* a badge can either have a simple ribbon, or a lanyard with a left and right ribbon. */
-  /* RIBBON PATTERNS */
-  /* COUNTRIES */
-  /* 13 red and white strips: United States */
-  /* red white and blue: Netherlands */
-  /* red white and green: Mexico, Hungary */
-  /* blue white and red: France */
-  /* red white and red: Canada */
-  /* green white and red: Italy */
-  /* red blue and white: Russia */
-  /* gold red and black: Germany */
-  /* orange white and green: India */
-  /* SOLID COLORS */
-  /* Solid Red */
-  /* Solid Orange */
-  /* Solid Yellow */
-  /* Solid Green */
-  /* Solid Blue */
-  /* Solid Purple */
-  /* Solid Pink */
-  /* Solid Black */
-  /* RAINBOW */ }
+  /* a badge can either have a simple ribbon, or a lanyard with a left and right ribbon. */ }
   .badge .circle, .badge .square, .badge .diamond {
     display: inline-block;
     margin: 0;
@@ -45,15 +38,6 @@
     transform: rotate(45deg); }
   .badge .diamond > * {
     transform: rotate(-45deg); }
-  .badge .gold {
-    background: radial-gradient(gold, palegoldenrod);
-    color: goldenrod; }
-  .badge .silver {
-    background: radial-gradient(#fafafa, #dddddd);
-    color: #cccccc; }
-  .badge .bronze {
-    background: radial-gradient(darkorange, chocolate);
-    color: sienna; }
   .badge .lanyard {
     position: relative;
     overflow: hidden;
@@ -65,6 +49,32 @@
   .badge .ribbon {
     margin: 0;
     padding: 0; }
+
+/* COLORS */
+.badge .gold {
+  background: radial-gradient(gold, palegoldenrod);
+  color: goldenrod; }
+
+.badge .silver {
+  background: radial-gradient(#fafafa, #dddddd);
+  color: #cccccc; }
+
+.badge .bronze {
+  background: radial-gradient(darkorange, chocolate);
+  color: sienna; }
+
+/* RIBBON PATTERNS */
+/* COUNTRIES */
+.badge {
+  /* 13 red and white strips: United States */
+  /* red white and blue: Netherlands */
+  /* red white and green: Mexico, Hungary */
+  /* blue white and red: France */
+  /* red white and red: Canada */
+  /* green white and red: Italy */
+  /* red blue and white: Russia */
+  /* gold red and black: Germany */
+  /* orange white and green: India */ }
   .badge .ribbon.red-white-stripes, .badge .ribbon.usa {
     background: linear-gradient(to right, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red, white, white, white, red, red, red); }
   .badge .ribbon.red-white-blue, .badge .ribbon.netherlands {
@@ -83,6 +93,18 @@
     background: linear-gradient(to right, gold, gold, gold, gold, gold, gold, gold, gold, red, red, red, red, red, red, black, black, black, black, black, black, black, black); }
   .badge .ribbon.orange-white-green, .badge .ribbon.india {
     background: linear-gradient(to right, orange, orange, orange, orange, orange, orange, orange, orange, white, white, white, white, white, white, green, green, green, green, green, green, green, green); }
+
+/* SOLID COLORS */
+.badge {
+  /* Solid Red */
+  /* Solid Orange */
+  /* Solid Yellow */
+  /* Solid Green */
+  /* Solid Blue */
+  /* Solid Purple */
+  /* Solid Pink */
+  /* Solid Black */
+  /* RAINBOW */ }
   .badge .ribbon.red {
     background: linear-gradient(to right, red, darkred, red, darkred, red); }
   .badge .ribbon.orange {
@@ -104,10 +126,38 @@
 
 /* BADGE SIZES */
 /* Tiny - really really small. No difference between border and no border since its too small to tell. */
-.badge.tiny .circle, .badge.tiny .circle.border {
+/*****************************
+ * Badgerly
+ * Keep re-usable extension classes here.
+ * These classes are not to be used directly in markup
+ * MIT License
+ *****************************/
+.ext_circle_tiny, .badge.tiny .circle, .badge.tiny .circle.border {
   border-radius: 5px;
   font-size: 6px;
-  text-align: center;
+  text-align: center; }
+
+.ext_circle_small, .badge.small .circle, .badge.small .circle.border {
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center; }
+
+.ext_circle_medium, .badge.medium .circle, .badge.medium .circle.border {
+  border-radius: 25px;
+  font-size: 30px;
+  text-align: center; }
+
+.ext_circle_large, .badge.large .circle, .badge.large .circle.border {
+  border-radius: 50px;
+  font-size: 60px;
+  text-align: center; }
+
+.ext_circle_huge, .badge.huge .circle, .badge.huge .circle.border {
+  border-radius: 100px;
+  font-size: 120px;
+  text-align: center; }
+
+.badge.tiny .circle, .badge.tiny .circle.border {
   width: 10px;
   height: 8px;
   padding-top: 1px; }
@@ -118,6 +168,9 @@
   width: 10px;
   height: 8px;
   padding-top: 1px; }
+
+.badge.tiny .border {
+  border-style: none; }
 
 .badge.tiny .lanyard {
   height: 6px;
@@ -138,20 +191,45 @@
   height: 5px; }
 
 /* Small */
+/*****************************
+ * Badgerly
+ * Keep re-usable extension classes here.
+ * These classes are not to be used directly in markup
+ * MIT License
+ *****************************/
+.ext_circle_tiny, .badge.tiny .circle, .badge.tiny .circle.border {
+  border-radius: 5px;
+  font-size: 6px;
+  text-align: center; }
+
+.ext_circle_small, .badge.small .circle, .badge.small .circle.border {
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center; }
+
+.ext_circle_medium, .badge.medium .circle, .badge.medium .circle.border {
+  border-radius: 25px;
+  font-size: 30px;
+  text-align: center; }
+
+.ext_circle_large, .badge.large .circle, .badge.large .circle.border {
+  border-radius: 50px;
+  font-size: 60px;
+  text-align: center; }
+
+.ext_circle_huge, .badge.huge .circle, .badge.huge .circle.border {
+  border-radius: 100px;
+  font-size: 120px;
+  text-align: center; }
+
 .badge.small {
   width: 30px;
   height: 37px; }
   .badge.small .circle {
-    border-radius: 12px;
-    font-size: 15px;
-    text-align: center;
     width: 25px;
     height: 20px;
     padding-top: 4px; }
   .badge.small .circle.border {
-    border-radius: 12px;
-    font-size: 15px;
-    text-align: center;
     width: 22px;
     height: 19px;
     padding-top: 3px; }
@@ -182,12 +260,8 @@
     height: 15px;
     padding-top: 0;
     padding-bottom: 1px; }
-  .badge.small .border.gold {
-    border: 1px solid goldenrod; }
-  .badge.small .border.silver {
-    border: 1px solid #cccccc; }
-  .badge.small .border.bronze {
-    border: 1px solid sienna; }
+  .badge.small .border {
+    border-width: 1px; }
   .badge.small .lanyard {
     height: 15px;
     padding-left: 5px;
@@ -208,20 +282,45 @@
     height: 12px; }
 
 /* Medium */
+/*****************************
+ * Badgerly
+ * Keep re-usable extension classes here.
+ * These classes are not to be used directly in markup
+ * MIT License
+ *****************************/
+.ext_circle_tiny, .badge.tiny .circle, .badge.tiny .circle.border {
+  border-radius: 5px;
+  font-size: 6px;
+  text-align: center; }
+
+.ext_circle_small, .badge.small .circle, .badge.small .circle.border {
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center; }
+
+.ext_circle_medium, .badge.medium .circle, .badge.medium .circle.border {
+  border-radius: 25px;
+  font-size: 30px;
+  text-align: center; }
+
+.ext_circle_large, .badge.large .circle, .badge.large .circle.border {
+  border-radius: 50px;
+  font-size: 60px;
+  text-align: center; }
+
+.ext_circle_huge, .badge.huge .circle, .badge.huge .circle.border {
+  border-radius: 100px;
+  font-size: 120px;
+  text-align: center; }
+
 .badge.medium {
   width: 60px;
   height: 75px; }
   .badge.medium .circle {
-    border-radius: 25px;
-    font-size: 30px;
-    text-align: center;
     width: 50px;
     height: 42px;
     padding-top: 7px; }
   .badge.medium .circle.border {
-    border-radius: 25px;
-    font-size: 30px;
-    text-align: center;
     width: 45px;
     height: 40px;
     padding-top: 5px; }
@@ -252,12 +351,8 @@
     height: 30px;
     padding-top: 0;
     padding-bottom: 2px; }
-  .badge.medium .border.gold {
-    border: 2px solid goldenrod; }
-  .badge.medium .border.silver {
-    border: 2px solid #cccccc; }
-  .badge.medium .border.bronze {
-    border: 2px solid sienna; }
+  .badge.medium .border {
+    border-width: 2px; }
   .badge.medium .lanyard {
     height: 30px;
     padding-left: 10px;
@@ -278,20 +373,45 @@
     height: 25px; }
 
 /* Large */
+/*****************************
+ * Badgerly
+ * Keep re-usable extension classes here.
+ * These classes are not to be used directly in markup
+ * MIT License
+ *****************************/
+.ext_circle_tiny, .badge.tiny .circle, .badge.tiny .circle.border {
+  border-radius: 5px;
+  font-size: 6px;
+  text-align: center; }
+
+.ext_circle_small, .badge.small .circle, .badge.small .circle.border {
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center; }
+
+.ext_circle_medium, .badge.medium .circle, .badge.medium .circle.border {
+  border-radius: 25px;
+  font-size: 30px;
+  text-align: center; }
+
+.ext_circle_large, .badge.large .circle, .badge.large .circle.border {
+  border-radius: 50px;
+  font-size: 60px;
+  text-align: center; }
+
+.ext_circle_huge, .badge.huge .circle, .badge.huge .circle.border {
+  border-radius: 100px;
+  font-size: 120px;
+  text-align: center; }
+
 .badge.large {
   width: 120px;
   height: 150px; }
   .badge.large .circle {
-    border-radius: 50px;
-    font-size: 60px;
-    text-align: center;
     width: 100px;
     height: 85px;
     padding-top: 15px; }
   .badge.large .circle.border {
-    border-radius: 50px;
-    font-size: 60px;
-    text-align: center;
     width: 90px;
     height: 80px;
     padding-top: 10px; }
@@ -322,12 +442,8 @@
     height: 60px;
     padding-top: 0;
     padding-bottom: 4px; }
-  .badge.large .border.gold {
-    border: 5px solid goldenrod; }
-  .badge.large .border.silver {
-    border: 5px solid #cccccc; }
-  .badge.large .border.bronze {
-    border: 5px solid sienna; }
+  .badge.large .border {
+    border-width: 5px; }
   .badge.large .lanyard {
     height: 60px;
     padding-left: 20px;
@@ -348,20 +464,45 @@
     height: 50px; }
 
 /* Huge - possibly with a Y. */
+/*****************************
+ * Badgerly
+ * Keep re-usable extension classes here.
+ * These classes are not to be used directly in markup
+ * MIT License
+ *****************************/
+.ext_circle_tiny, .badge.tiny .circle, .badge.tiny .circle.border {
+  border-radius: 5px;
+  font-size: 6px;
+  text-align: center; }
+
+.ext_circle_small, .badge.small .circle, .badge.small .circle.border {
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center; }
+
+.ext_circle_medium, .badge.medium .circle, .badge.medium .circle.border {
+  border-radius: 25px;
+  font-size: 30px;
+  text-align: center; }
+
+.ext_circle_large, .badge.large .circle, .badge.large .circle.border {
+  border-radius: 50px;
+  font-size: 60px;
+  text-align: center; }
+
+.ext_circle_huge, .badge.huge .circle, .badge.huge .circle.border {
+  border-radius: 100px;
+  font-size: 120px;
+  text-align: center; }
+
 .badge.huge {
   width: 240px;
   height: 300px; }
   .badge.huge .circle {
-    border-radius: 100px;
-    font-size: 120px;
-    text-align: center;
     width: 200px;
     height: 170px;
     padding-top: 30px; }
   .badge.huge .circle.border {
-    border-radius: 100px;
-    font-size: 120px;
-    text-align: center;
     width: 180px;
     height: 160px;
     padding-top: 20px; }
@@ -392,12 +533,8 @@
     height: 120px;
     padding-top: 0;
     padding-bottom: 8px; }
-  .badge.huge .border.gold {
-    border: 10px solid goldenrod; }
-  .badge.huge .border.silver {
-    border: 10px solid #cccccc; }
-  .badge.huge .border.bronze {
-    border: 10px solid sienna; }
+  .badge.huge .border {
+    border-width: 10px; }
   .badge.huge .lanyard {
     height: 120px;
     padding-left: 40px;
