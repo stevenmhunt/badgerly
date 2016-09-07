@@ -1,0 +1,47 @@
+.badge {
+
+  /* Solid Red */
+  .ribbon.red {
+    background: linear-gradient(to right, red, darkred, red, darkred, red);
+  }
+
+  /* Solid Orange */
+  .ribbon.orange {
+    background: linear-gradient(to right, orange, darkorange, orange, darkorange, orange);
+  }
+
+  /* Solid Yellow */
+  .ribbon.yellow {
+    background: linear-gradient(to right, yellow, gold, yellow, gold, yellow);
+  }
+
+  /* Solid Green */
+  .ribbon.green {
+    background: linear-gradient(to right, green, darkgreen, green, darkgreen, green);
+  }
+
+  /* Solid Blue */
+  .ribbon.blue {
+    background: linear-gradient(to right, blue, darkblue, blue, darkblue, blue);
+  }
+
+  /* Solid Purple */
+  .ribbon.purple {
+    background: linear-gradient(to right, rebeccapurple, purple, rebeccapurple, purple, rebeccapurple);
+  }
+
+  /* Solid Pink */
+  .ribbon.pink {
+    background: linear-gradient(to right, pink, lightpink, pink, lightpink, pink);
+  }
+
+  /* Solid Black */
+  .ribbon.black {
+    background: linear-gradient(to right, black, #333333, black, #333333, black);
+  }
+
+  /* RAINBOW */
+  .ribbon.rainbow {
+    background: linear-gradient(to right, red, red, orange, orange, yellow, yellow, green, green, blue, blue, purple, purple);
+  }
+}
