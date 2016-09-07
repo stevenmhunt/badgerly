@@ -1,0 +1,46 @@
+@import "../extensions";
+
+.badge.tiny {
+
+  .circle, .circle.border {
+    @extend .ext_circle_tiny;
+    width: 10px;
+    height: 8px;
+    padding-top: 1px;
+  }
+
+  .square, .square.border, .diamond, .diamond.border {
+    font-size: 6px;
+    text-align: center;
+    width: 10px;
+    height: 8px;
+    padding-top: 1px;
+  }
+
+  .border {
+    border-style: none;
+  }
+
+  .lanyard {
+    height: 6px;
+    padding-left: 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-bottom: -1px;
+    width: 12px;
+
+    .ribbon.left {
+      transform: translate(-3px, 0) rotate(-20deg);
+    }
+    .ribbon.right {
+      transform: scaleX(-1) translate(-3px, 0) rotate(-20deg);
+    }
+  }
+
+  .ribbon {
+    margin-bottom: -1px;
+    margin-left: 3px;
+    width: 4px;
+    height: 5px;
+  }
+}
