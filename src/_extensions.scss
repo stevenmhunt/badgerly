@@ -1,0 +1,36 @@
+/*****************************
+ * Badgerly
+ * Keep re-usable extension classes here.
+ * These classes are not to be used directly in markup
+ * MIT License
+ *****************************/
+
+.ext_circle_tiny {
+  border-radius: 5px;
+  font-size: 6px;
+  text-align: center;
+}
+
+.ext_circle_small {
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.ext_circle_medium {
+  border-radius: 25px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ext_circle_large {
+  border-radius: 50px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.ext_circle_huge {
+  border-radius: 100px;
+  font-size: 120px;
+  text-align: center;
+}
